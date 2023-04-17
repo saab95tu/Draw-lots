@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Draw lots</title>
+	<script type="text/javascript">
+		function getRandomImage() {
+			var images = [
+				"image1.png",
+				"image2.png",
+				"image3.png"
+			];
+
+			var randomNumber = Math.floor(Math.random() * images.length);
+			document.getElementById("myImg").src = images[randomNumber];
+		}
+	</script>
+</head>
+<body>
+	<h1>随机图片</h1>
+	<button onclick="getRandomImage()">点击这里！</button>
+	<br><br>
+	<img id="myImg" src="">
+</body>
+</html
